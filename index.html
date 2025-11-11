@@ -27,20 +27,20 @@
       }
       button {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 300px;
+        right: 400px;
         background-color: green;
         color: white;
         border: none;
-        padding: 12px 24px;
+        padding: clamp(20px, 3vw, 30px) clamp(40px, 6vw, 60px);
         border-radius: 8px;
         cursor: pointer;
         font-size: clamp(12px, 2vw, 18px);
         transition: background 0.3s, transform 0.2s;
       }
       button:hover {
-        background-color: lightblue;
-        transform: scale(1.05);
+        /* background-color: lightblue; */
+        transform: scale(1.5);
       }
       
       

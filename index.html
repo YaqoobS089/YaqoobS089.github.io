@@ -14,21 +14,27 @@
         text-align: center;
         padding: 60px;
       }
+      
       h1 {
         font-size: clamp(40px, 6vw, 60px);
         color: white;
         text-shadow: 3px 3px 1px rgba(0,0,0,1);
       }
+      
       p {
         font-size: clamp(20px, 3vw, 30px);
         font-family: 'Pacifico', cursive;
         color: white;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
       }
-      button {
-        position: fixed;
-        bottom: 300px;
-        right: 400px;
+      
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+      }
+      .container button {
         background-color: green;
         color: white;
         border: none;
@@ -38,17 +44,24 @@
         font-size: clamp(12px, 2vw, 18px);
         transition: background 0.3s, transform 0.2s;
       }
-      button:hover {
-        /* background-color: lightblue; */
+      .container button:hover {
         transform: scale(1.5);
       }
-      
       
     </style>
   </head>
   <body>
     <h1>Hello!</h1>
     <p>This is Aarya's and Yaqoob's project.</p>
-    <button onclick= "alert('Thanks for visiting!')">Click ME</button>
+
+    <!-- Buttons -->
+    <div class="container">
+      <button class="btn1">Button 1</button>
+      <button class="btn2">Button 2</button>
+      <button class="btn2">Button 3</button>
+    </div>
+
+    
+    <!-- <button onclick= "alert('Thanks for visiting!')">Click ME</button> -->
   </body>
 </html>
